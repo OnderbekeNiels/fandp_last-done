@@ -1,6 +1,6 @@
 // tailwind.config.js
 module.exports = {
-  // mode: 'jit',
+  mode: "jit",
 
   purge: ["./index.html", "./src/**/*.{vue,js,ts}"],
 

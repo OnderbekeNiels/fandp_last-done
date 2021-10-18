@@ -7,7 +7,7 @@ import Routine from "../components/Routine.vue";
 export default defineComponent({
   components: {
     AppHeader,
-    Routine
+    Routine,
   },
   setup() {
     const router = useRouter();
@@ -31,8 +31,11 @@ export default defineComponent({
       @onBtnRightClick="addBtn"
       rightBtn="Add"
     ></AppHeader>
-    <section class="py-10">
-        <Routine></Routine>
+    <section class="grid grid-cols-2 gap-6 py-10">
+      <Routine title="Morning routine" itemCount="4"></Routine>
+      <Routine title="Morning routine" itemCount="4"></Routine>
+      <Routine title="Morning routine" itemCount="4"></Routine>
+      <Routine title="Morning routine" itemCount="4"></Routine>
     </section>
   </main>
 </template>

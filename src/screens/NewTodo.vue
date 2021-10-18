@@ -25,7 +25,7 @@ export default defineComponent({
 <template>
   <main>
     <AppHeader
-      title="New Routine"
+      title="New Todo"
       leftBtn="Cancel"
       rightBtn="Add"
       @onBtnLeftClick="$router.back"

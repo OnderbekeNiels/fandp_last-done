@@ -10,6 +10,12 @@ const routes: RouteRecordRaw[] = [
   {
     path: "/",
     component: () => import("../screens/Routines.vue"),
+    children: [
+      {
+        path: "/:id",
+        component: () => import("../screens/RoutineDetail.vue"),
+      },
+    ],
   },
   {
     path: "/new-routine",
