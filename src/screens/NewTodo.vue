@@ -31,7 +31,7 @@ export default defineComponent({
       @onBtnLeftClick="$router.back"
     ></AppHeader>
     <form class="py-10" action="">
-      <label class="block mb-2 font-bold" for="title">Routing title</label>
+      <label class="block mb-2 font-bold" for="title">Routine title</label>
       <input
         placeholder="eg. Morning routine"
         class="border-2 border-gray-300 block rounded-md w-full p-2 mb-6"

@@ -1,23 +1,22 @@
 <script lang="ts">
 import { defineComponent } from "vue";
+import RoutineModel from "../models/Routine";
 
 export default defineComponent({
   props: {
-    title: {
-      type: String,
-      required: true,
-    },
-    itemCount: {
-      type: String,
-      required: true,
-    },
+    routine: { type: Object as () => RoutineModel, required: true },
   },
-  setup(props) {},
+  setup(props) {
+    return {};
+  },
 });
 </script>
 
 <template>
-  <article class="border-2 border-gray-300 w-full rounded-md p-2">
+  <button
+    @click="$router.push(`/${routine.uuid}`)"
+    class="border-2 border-gray-300 w-full rounded-md p-2 pb-6 hover:opacity-50"
+  >
     <div class="flex justify-end">
       <svg
         class="text-gray-300 stroke-current cursor-pointer"
@@ -35,8 +34,8 @@ export default defineComponent({
       </svg>
     </div>
     <div class="text-center">
-      <h1 class="font-bold text-sm">{{ title }}</h1>
-      <p class="text-xs">{{ itemCount }} items</p>
+      <h1 class="font-bold text-sm">{{ routine.title }}</h1>
+      <p class="text-xs">{{ routine.numberOfTodos }} items</p>
     </div>
-  </article>
+  </button>
 </template>

@@ -10,12 +10,14 @@ const routes: RouteRecordRaw[] = [
   {
     path: "/",
     component: () => import("../screens/Routines.vue"),
-    children: [
-      {
-        path: "/:id",
-        component: () => import("../screens/RoutineDetail.vue"),
-      },
-    ],
+  },
+  {
+    path: "/:id",
+    component: () => import("../screens/RoutineDetail.vue"),
+  },
+  {
+    path: "/new-todo",
+    component: () => import("../screens/NewTodo.vue"),
   },
   {
     path: "/new-routine",
