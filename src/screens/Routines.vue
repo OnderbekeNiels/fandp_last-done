@@ -22,15 +22,15 @@ export default defineComponent({
         uuid: "dfssdfqsdf",
         title: "good morning",
         numberOfTodos: 1,
-        color: "red",
+        color: "bg-epsilon",
       },
-      { uuid: "ddsfs", title: "good morning", numberOfTodos: 1, color: "blue" },
-      { uuid: "dsfd", title: "good morning", numberOfTodos: 4, color: "gray" },
+      { uuid: "ddsfs", title: "good morning", numberOfTodos: 1, color: "bg-epsilon" },
+      { uuid: "dsfd", title: "good morning", numberOfTodos: 4, color: "bg-epsilon" },
       {
         uuid: "dfssdfhjtrqsdf",
         title: "good night",
         numberOfTodos: 5,
-        color: "pink",
+        color: "bg-epsilon",
       },
     ]);
 

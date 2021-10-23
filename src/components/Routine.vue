@@ -13,9 +13,9 @@ export default defineComponent({
 </script>
 
 <template>
-  <button
+  <article
     @click="$router.push(`/${routine.uuid}`)"
-    class="border-2 border-gray-300 w-full rounded-md p-2 pb-6 hover:bg-gradient-to-br hover:text-white from-gray-200 via-blue-400 to-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400     "
+    class="border-2 border-gray-300 w-full rounded-md p-2 pb-6 hover:bg-gradient-to-br hover:text-white from-purple-800 to-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400  hover:drop-shadow-md"
   >
     <div class="flex justify-end">
       <svg  
@@ -37,5 +37,5 @@ export default defineComponent({
       <h1 class="font-bold text-sm">{{ routine.title }}</h1>
       <p class="text-xs">{{ routine.numberOfTodos }} items</p>
     </div>
-  </button>
+  </article>
 </template>

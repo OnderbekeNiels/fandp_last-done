@@ -4,6 +4,6 @@ export default interface Todo {
   routineId: string;
   icon: string;
   color: string;
-  createdAt: Date;
+  createdAt?: Date;
   updateAt?: Date;
 }

@@ -11,11 +11,11 @@ export default defineComponent({
   },
   setup() {
     const colorOptions: any[] = [
-      { name: "red", css: "bg-red-300" },
-      { name: "green", css: "bg-green-300" },
-      { name: "yellow", css: "bg-yellow-300" },
-      { name: "blue", css: "bg-blue-300" },
-      { name: "pink", css: "bg-pink-300" },
+      "bg-alpha",
+      "bg-beta",
+      "bg-delta",
+      "bg-epsilon",
+      "bg-gamma",
     ];
 
     const icons: any[] = [
@@ -45,7 +45,6 @@ export default defineComponent({
 
     const validateForm = () => {
       for (const [key, value] of Object.entries(formData)) {
-        
         if (value == "") {
           formValidation[key] = true;
         } else {
@@ -87,11 +86,10 @@ export default defineComponent({
     <AppHeader
       title="New Routine"
       leftBtn="Cancel"
-      rightBtn="Add"
       @onBtnLeftClick="$router.back"
     ></AppHeader>
     <form class="py-10" action="" @submit.prevent="startValidation">
-      <label class="block mb-2 font-bold" for="title">Routing title</label>
+      <label class="block mb-2 font-bold" for="title">Routine title</label>
       <input
         placeholder="eg. Morning routine"
         class="
@@ -114,13 +112,13 @@ export default defineComponent({
       </p>
       <p class="mb-2 font-bold">Color</p>
       <div class="grid grid-cols-5 mb-6 gap-2">
-        <label v-for="i of colorOptions" :key="i.name">
+        <label v-for="i of colorOptions" :key="i">
           <input
-            :value="i.name"
+            :value="i"
             type="radio"
             name="color"
             v-model="formData.color"
-            :id="i.name"
+            :id="i"
             class="w-0 h-0 peer absolute overflow-hidden"
           />
           <div
@@ -136,7 +134,7 @@ export default defineComponent({
               place-items-center
             "
           >
-            <span :class="i.css" class="w-6 h-6 block rounded-full"></span>
+            <span :class="i" class="w-6 h-6 block rounded-full"></span>
           </div>
         </label>
       </div>

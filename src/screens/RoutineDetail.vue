@@ -19,7 +19,7 @@ export default defineComponent({
         title: "Mock todo",
         routineId: "123",
         icon: "Activity",
-        color: "bg-alpha",
+        color: "bg-epsilon",
         createdAt: new Date(),
       },
     ]);
