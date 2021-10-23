@@ -43,4 +43,5 @@ export default defineComponent({
   <section class="grid grid-cols-1 sm:grid-cols-2 gap-6 py-10">
     <Todo v-for="t of todos" :key="t.title" :todo="t"></Todo>
   </section>
+  <!-- <router-view></router-view> -->
 </template>

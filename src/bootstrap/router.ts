@@ -16,12 +16,12 @@ const routes: RouteRecordRaw[] = [
     component: () => import("../screens/RoutineDetail.vue"),
   },
   {
-    path: "/new-todo",
-    component: () => import("../screens/NewTodo.vue"),
-  },
-  {
     path: "/new-routine",
     component: () => import("../screens/NewRoutine.vue"),
+  },
+  {
+    path: "/new-todo",
+    component: () => import("../screens/NewTodo.vue"),
   },
 ];
 
