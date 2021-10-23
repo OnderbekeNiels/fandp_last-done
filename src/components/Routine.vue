@@ -15,10 +15,10 @@ export default defineComponent({
 <template>
   <button
     @click="$router.push(`/${routine.uuid}`)"
-    class="border-2 border-gray-300 w-full rounded-md p-2 pb-6 hover:opacity-50"
+    class="border-2 border-gray-300 w-full rounded-md p-2 pb-6 hover:bg-gradient-to-br hover:text-white from-gray-200 via-blue-400 to-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400     "
   >
     <div class="flex justify-end">
-      <svg
+      <svg  
         class="text-gray-300 stroke-current cursor-pointer"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
