@@ -18,10 +18,20 @@ export default defineComponent({
     };
 
     const routines = ref<RoutineModel[]>([
-      { uuid: "dfssdfqsdf", title: "good morning", numberOfTodos: 1 },
-      { uuid: "ddsfs", title: "good morning", numberOfTodos: 1 },
-      { uuid: "dsfd", title: "good morning", numberOfTodos: 4 },
-      { uuid: "dfssdfhjtrqsdf", title: "good night", numberOfTodos: 5 }
+      {
+        uuid: "dfssdfqsdf",
+        title: "good morning",
+        numberOfTodos: 1,
+        color: "red",
+      },
+      { uuid: "ddsfs", title: "good morning", numberOfTodos: 1, color: "blue" },
+      { uuid: "dsfd", title: "good morning", numberOfTodos: 4, color: "gray" },
+      {
+        uuid: "dfssdfhjtrqsdf",
+        title: "good night",
+        numberOfTodos: 5,
+        color: "pink",
+      },
     ]);
 
     return {
